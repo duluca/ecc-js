@@ -10,7 +10,7 @@ var port = process.env.PORT || 5000;
 
 app.get('/', function (req, res) {
     var result = {
-        data: [1,2,3,5,8,13]
+        data: ["1","2","3","5","8","13"]
     }
 
     res.send(result);

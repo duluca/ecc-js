@@ -9,7 +9,11 @@ var app = express();
 var port = process.env.PORT || 5000;
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    var result = {
+        data: [1,2,3,5,8,13]
+    }
+
+    res.send(result);
 });
 
 app.listen(port, function () {
